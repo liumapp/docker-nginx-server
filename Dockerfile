@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:centos7
 
 ENV APP_USER www
 ENV APP_ROOT /www
