@@ -6,7 +6,7 @@ services:
     restart: always
     container_name: nginx
     volumes: 
-      - /Users/docker/nginx/docker-nginx-server/conf/nginx.conf:/etc/nginx/conf.d/default.conf
+      - /Users/docker/nginx/docker-nginx-server/logs:/var/log/nginx
     ports:
       - "80:80"
       - "443:443"
