@@ -1,4 +1,13 @@
-version: "3"
+version: '3'
 
 service:
-  
+  nginx:
+    image: nginx:1.13
+    restart: always
+    container_name: nginx
+    volumes: 
+      - /Users/docker/nginx/docker-nginx-server/conf/nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "80:80"
+      - "443:443"
+      
