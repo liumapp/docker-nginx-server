@@ -7,6 +7,9 @@ services:
     container_name: nginx
     volumes: 
       - /Users/docker/nginx/docker-nginx-server/logs:/var/log/nginx
+      - /Users/docker/nginx/docker-nginx-server/nginx.pid:/var/run/nginx.pid
+      - /Users/docker/nginx/docker-nginx-server/www:/var/www/html/public/
+      - /Users/docker/nginx/docker-nginx-server/conf:/etc/nginx/conf.d/
     ports:
       - "80:80"
       - "443:443"

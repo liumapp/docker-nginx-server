@@ -1,0 +1,9 @@
+server {
+    listen 80 testb.com;
+
+    index index.html;
+    error_log  /var/log/nginx/log/test_b_error.log;
+    access_log /var/log/nginx/log/test_b_access.log;
+    root /var/www/html/public/testb/;
+
+}
