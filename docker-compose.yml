@@ -1,7 +1,8 @@
-version: '3'
+version: '2'
 
 services:
   nginx:
+    container_name: nginx
     restart: always
     image: nginx:1.13
     ports:
@@ -10,4 +11,4 @@ services:
     volumes:
       - ./conf/vhosts:/etc/nginx/conf.d
       - ./logs:/var/log/nginx
-      - ./www:/var/www
+      - ./www/:/var/www/
